@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login – NovaStore</title>
+    <link rel="stylesheet" href="../styles/styleLogin.css">
+</head>
+<body>
+
+<header class="header">
+    <img src="../img/NovaStoreLogo.svg" class="logo" alt="NovaStore Logo">
+
+    <nav class="navbar">
+        <a href="index.html" class="links">Home</a>
+        <a href="shop.html" class="links">Shop</a>
+        <a href="about.html" class="links">About</a>
+        <a href="contact.html" class="links">Contact</a>
+
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search products...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <a href="cart.html" class="cart">Cart</a>
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="profile.html" id="profileLink" style="display:none;">Profile</a>
+    </nav>
+</header>
+
+<nav class="category-nav">
+    <div id="categoryNavLinks"></div>
+</nav>
+
+<section class="login-container">
+    <h1>Login</h1>
+
+    <div id="errorMsg" class="error-msg"></div>
+
+    <form id="loginForm">
+        <label>Email</label>
+        <input type="email" id="emailInput" placeholder="Enter your email">
+
+        <label>Password</label>
+        <input type="password" id="passwordInput" placeholder="Enter your password">
+
+        <button type="submit" class="login-btn">Login</button>
+
+        <p class="register-text">
+            Don’t have an account?
+            <a href="register.html">Register here</a>
+        </p>
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="footer-left">
+        <h3>Categories</h3>
+        <ul id="footer-categories"></ul>
+    </div>
+
+    <div class="footer-center">
+        <h3>Contact</h3>
+        <p>Email: support@novastore.com</p>
+        <p>Phone: +1 800 000 000</p>
+    </div>
+
+    <div class="footer-right">
+        <h3>Newsletter</h3>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+    </div>
+</footer>
+
+<script src="../js/header.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>

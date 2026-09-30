@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f8f8f8;
+    color: #222;
+}
+
+.header {
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links, .cart, #loginLink, #profileLink {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+.category-nav {
+    background: #fff;
+    padding: 12px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#categoryNavLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#categoryNavLinks a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#categoryNavLinks a:hover {
+    color: #4c6fff;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#searchBar {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    width: 180px;
+}
+
+#searchBtn {
+    padding: 6px 12px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+#searchBtn:hover {
+    background: #333;
+}
+
+.hero {
+    height: 350px;
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("https://picsum.photos/1600/500") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 80px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.featured-section {
+    padding: 50px 40px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.product-card button {
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background: #333;
+}
+
+.shopClothing{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: solid;
+    border-radius: 10px;
+    border: black;
+    border-width: 2px;
+}
+
+.footer {
+    margin-top: auto;
+    background: #111;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-left ul {
+    list-style: none;
+}
+
+.footer-left a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    color: white;
+}
+
+.footer-right input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.footer-right button {
+    padding: 8px 12px;
+    background: white;
+    color: #111;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.slider-section {
+    padding: 50px 40px;
+    background: #f8f8f8;
+}
+
+.slider-section h2 {
+    margin-bottom: 20px;
+}
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.6s ease;
+}
+
+.slider-card {
+    min-width: 220px;
+    background: white;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+}
+
+.slider-card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.slider-card h3 {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.slider-card p {
+    font-weight: bold;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.7);
+    color: white;
+    border: none;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+.slider-btn.left {
+    left: 10px;
+}
+
+.slider-btn.right {
+    right: 10px;
+}
+
+.slider-btn:hover {
+    background: black;
+}
+
+#ftProducts{
+    margin-bottom: 20px;
+}

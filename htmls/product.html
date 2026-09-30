@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styleProduct.css">
+    <title>Product – NovaStore</title>
+</head>
+<body>
+
+    <header class="header">
+        <img src="../img/NovaStoreLogo.svg" alt="NovaStore Logo" class="logo">
+
+        <nav class="navbar">
+            <a href="index.html" class="links">Home</a>
+            <a href="shop.html" class="links">Shop</a>
+            <a href="about.html" class="links">About</a>
+            <a href="contact.html" class="links">Contact</a>
+
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Search products...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <a href="cart.html" class="cart">Cart</a>
+            <a href="login.html" id="loginLink">Login</a>
+            <a href="profile.html" id="profileLink" style="display:none;">Profile</a>
+        </nav>
+    </header>
+
+    <nav class="category-nav">
+        <div id="categoryNavLinks"></div>
+    </nav>
+
+    <section id="productContainer" class="product-container">
+    </section>
+
+    <section class="related-section">
+        <h2>Related Products</h2>
+        <div id="relatedProducts" class="related-grid"></div>
+    </section>
+
+    <section class="reviews-section">
+        <h2>Customer Reviews</h2>
+        <div id="reviewsContainer"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>Categories</h3>
+            <ul id="footer-categories"></ul>
+        </div>
+
+        <div class="footer-center">
+            <h3>Contact</h3>
+            <p>Email: support@novastore.com</p>
+            <p>Phone: +1 800 000 000</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>Newsletter</h3>
+            <input type="email" placeholder="Your email">
+            <button>Subscribe</button>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/product.js"></script>
+
+</body>
+</html>
